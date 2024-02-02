@@ -7,7 +7,7 @@ const Banner = () => {
         src={falaises}
         alt='Photo représentant des falaises en bord de mer'
       />
-      <span>Chez vous, partout et ailleurs</span>
+      <h1>Chez vous, partout et ailleurs</h1>
     </div>
   )
 }
