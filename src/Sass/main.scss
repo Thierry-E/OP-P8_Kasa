@@ -1,5 +1,7 @@
-@use './Bases/Reset.scss';
-@use './Bases/Typo.scss';
-@use './Utils/Variables.scss';
-@use './Bases/Base.scss';
-@use './Components/Header.scss';
+@use './Bases/Reset';
+@use './Bases/Typo';
+@use './Utils/Variables';
+@use './Utils/Mixins.scss';
+@use './Bases/Base';
+@use './Components/Header';
+@use './Components/Banner';
