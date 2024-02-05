@@ -1,13 +1,24 @@
 import logo from '../assets/logo.png'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
     <header>
       <img src={logo} alt='Logo Agence Kasa' />
       <nav>
-        <Link to='/'>Accueil</Link>
-        <Link to='/about'>A propos</Link>
+        <NavLink
+          exact
+          to='/'
+          className={(nav) => (nav.isActive ? 'nav-Active' : null)}
+        >
+          Accueil
+        </NavLink>
+        <NavLink
+          to='/about'
+          className={(nav) => (nav.isActive ? 'nav-Active' : null)}
+        >
+          A propos
+        </NavLink>
       </nav>
     </header>
   )

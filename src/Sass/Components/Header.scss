@@ -22,3 +22,9 @@ header {
     margin-left: 57px;
   }
 }
+
+// Style qui applique un soulignement au lien actif=
+.nav-Active {
+  border-bottom: 3px solid $primary-color;
+  padding-bottom: 2px;
+}
