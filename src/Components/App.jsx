@@ -11,10 +11,10 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path='*' element={<Error />} />
-          {/*Route générique pour les URL non valides*/}
           <Route path='/' element={<Home />} />
           <Route path='/About' element={<About />} />
+          <Route path='*' element={<Error />} />
+          {/*Route générique pour les URL non valides*/}
         </Routes>
         <Footer />
       </BrowserRouter>

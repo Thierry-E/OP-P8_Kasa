@@ -7,7 +7,6 @@ const Header = () => {
       <img src={logo} alt='Logo Agence Kasa' />
       <nav>
         <NavLink
-          exact
           to='/'
           className={(nav) => (nav.isActive ? 'nav-Active' : null)}
         >

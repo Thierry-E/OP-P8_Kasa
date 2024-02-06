@@ -2,7 +2,7 @@
 @import '../Utils/Mixins.scss';
 
 .banner {
-  width: 86.112%;
+  width: 86%;
   height: 223px;
   border-radius: 25px;
   margin: 0 auto 43px auto;
@@ -11,6 +11,17 @@
   justify-content: center;
   align-items: center;
   position: relative;
+
+  &::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+  }
 
   img {
     width: 100%;
@@ -28,11 +39,8 @@
     text-align: center;
     line-height: 223px;
     @include banner-text-shadow;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
+    margin-top: -220px;
+    z-index: 2;
   }
 }
