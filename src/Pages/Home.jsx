@@ -4,7 +4,7 @@ import Gallery from '../components/Gallery'
 const Home = () => {
   return (
     <div>
-      <Banner />
+      <Banner showText={true} />
       <Gallery />
     </div>
   )
