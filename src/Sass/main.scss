@@ -1,11 +1,12 @@
 @use './Bases/Reset';
 @use './Bases/Typo';
 @use './Utils/Variables';
-@use './Utils/Mixins.scss';
+@use './Utils/Mixins';
 @use './Bases/Base';
 @use './Components/Header';
-@use './Components/Footer.scss';
+@use './Components/Footer';
 @use './Components/Banner';
-@use './Components/Gallery.scss';
-@use './Components/Cart.scss';
-@use './Pages/Error.scss';
+@use './Components/Gallery';
+@use './Components/Cart';
+@use './Components/DropdownList';
+@use './Pages/Error';

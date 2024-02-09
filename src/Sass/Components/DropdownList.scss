@@ -1,0 +1,53 @@
+@import '../Utils/Variables.scss';
+
+.listContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .list {
+    width: 988px;
+    height: 34px;
+    background-color: $fourth-color;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: $secondary-color;
+  }
+
+  .rafter {
+    font-size: 44px;
+    font-weight: 550;
+    color: $secondary-color;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+  }
+
+  .rafterActive {
+    transform: rotate(-92deg);
+  }
+
+  p {
+    width: 988px;
+    font-size: 1em;
+    font-weight: 500;
+    color: $primary-color;
+    margin-bottom: 60px;
+    line-height: 1.8em;
+    display: none;
+  }
+
+  .listActive {
+    display: block;
+  }
+}

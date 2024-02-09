@@ -1,5 +1,6 @@
 import Banner from '../components/Banner'
 import Montagnes from '../assets/Montagnes.jpg'
+import DropdownList from '../components/DropdownList'
 
 const About = () => {
   return (
@@ -10,6 +11,7 @@ const About = () => {
         isOpaque={true}
         altText='Photo représentant des montagnes'
       />
+      <DropdownList />
     </div>
   )
 }
