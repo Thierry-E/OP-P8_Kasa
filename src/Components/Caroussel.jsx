@@ -14,10 +14,7 @@ const Carousel = ({ slides }) => {
 
   return (
     <div className='slideContainer'>
-      <img
-        src={slides[currentSlideIndex]}
-        alt={`Slide ${currentSlideIndex + 1}`}
-      />
+      <img src={slides[currentSlideIndex]} alt={`Slide ${currentSlideIndex}`} />
       {showNavigation && (
         <div>
           <i
