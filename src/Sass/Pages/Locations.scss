@@ -1,0 +1,81 @@
+@import '../Utils/Variables.scss';
+
+.logementContent {
+  width: 86%;
+  margin: 0 auto 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.infosLeft {
+  width: 80%;
+
+  h2 {
+    color: $fourth-color;
+    font-size: 2.25em;
+    font-weight: 500;
+    line-height: 51px;
+  }
+
+  p {
+    color: $primary-color;
+    font-size: 1.125em;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .tags {
+    margin-bottom: 25px;
+  }
+
+  span {
+    width: 115px;
+    height: 25px;
+    background: $fourth-color;
+    color: $third-color;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 0.875em;
+    font-weight: 700;
+  }
+}
+
+.infosRight {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .personna {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 70px;
+
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 100%;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      color: $fourth-color;
+      font-size: 1.125em;
+      font-weight: 500;
+      width: 20px;
+    }
+  }
+}
+
+.stars {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+
+  i {
+    font-size: 1.3em;
+  }
+}
