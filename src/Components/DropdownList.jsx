@@ -3,7 +3,7 @@ import Dropdown from './Dropdown'
 
 const DropdownList = ({ services }) => {
   return (
-    <div className='listContainer'>
+    <div>
       {services.map((service) => (
         <Dropdown key={service.id} title={service.title} text={service.text} />
       ))}
