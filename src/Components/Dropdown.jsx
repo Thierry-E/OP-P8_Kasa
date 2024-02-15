@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import propTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 const Dropdown = ({ title, text }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -16,15 +16,30 @@ const Dropdown = ({ title, text }) => {
           &#x2039;
         </span>
       </div>
-      {isOpen && <p className='listActive'>{text}</p>}
+      {isOpen && (
+        <div className='equipmentList'>
+          {typeof text === 'string' ? (
+            <p className='listActive'>{text}</p>
+          ) : Array.isArray(text) ? (
+            <ul className='listActive'>
+              {text.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : null}
+        </div>
+      )}
     </div>
   )
 }
 
 // Définition des types de props
 Dropdown.propTypes = {
-  title: propTypes.string,
-  text: propTypes.string,
-}.isRequired
+  title: PropTypes.string.isRequired,
+  text: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.arrayOf(PropTypes.string),
+  ]).isRequired,
+}
 
 export default Dropdown

@@ -44,10 +44,10 @@
     color: $primary-color;
     margin-bottom: 60px;
     line-height: 1.8em;
-    display: none;
+    opacity: 0;
   }
 
   .listActive {
-    display: block;
+    opacity: 1;
   }
 }

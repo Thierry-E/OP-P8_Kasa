@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import hebergements from '../datas/hebergements.json'
 import Caroussel from '../components/Caroussel'
+import Dropdown from '../components/Dropdown'
 
 const Locations = () => {
   const { id } = useParams()
@@ -38,6 +39,10 @@ const Locations = () => {
           </div>
           <div className='stars'>{renderStars(location.rating)}</div>
         </div>
+      </div>
+      <div className='features'>
+        <Dropdown title={'Description'} text={location.description} />
+        <Dropdown title={'Equipements'} text={location.equipments} />
       </div>
     </div>
   )
