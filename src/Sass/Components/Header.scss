@@ -8,9 +8,23 @@ header {
   justify-content: space-between;
   align-items: center;
 
+  @media screen and (max-width: 375px) {
+    width: 100%;
+    margin-top: 15px;
+  }
+
   img {
     width: auto;
     height: 68px;
+
+    @media screen and (max-width: 375px) {
+      height: 47px;
+      margin-left: 20px;
+    }
+  }
+
+  nav {
+    margin-right: 20px;
   }
 
   nav a {
@@ -20,6 +34,11 @@ header {
     font-size: 1.125em;
     font-weight: 500;
     margin-left: 57px;
+
+    @media screen and (max-width: 375px) {
+      font-size: 1em;
+      margin-left: 20px;
+    }
   }
 }
 
