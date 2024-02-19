@@ -9,11 +9,25 @@
   padding: 65px 0 65px 0;
   margin-left: 100px;
 
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 0 30px 0;
+    gap: 20px;
+  }
+
   .cart-Item {
     width: 27.42%;
     height: 340px;
     border-radius: 10px;
     position: relative;
+
+    @media screen and (max-width: 375px) {
+      width: 85%;
+      height: 255px;
+    }
 
     h3 {
       width: 100%;
@@ -36,6 +50,10 @@
       padding-left: 15px;
       display: flex;
       align-items: center;
+
+      @media screen and (max-width: 375px) {
+        font-size: 1em;
+      }
     }
   }
 
@@ -44,5 +62,9 @@
     height: 340px;
     border-radius: 10px;
     object-fit: cover;
+
+    @media screen and (max-width: 375px) {
+      height: 225px;
+    }
   }
 }

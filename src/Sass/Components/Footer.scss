@@ -13,6 +13,10 @@
     width: 7.625em;
     height: 39px;
     margin-bottom: 32px;
+
+    @media screen and (max-width: 375px) {
+      margin-bottom: 20px;
+    }
   }
 
   span {
@@ -25,7 +29,8 @@
       flex-direction: column;
       align-items: center;
       margin-left: 0;
-      width: 130px;
+      width: 129px;
+      font-size: 1em;
     }
   }
 }

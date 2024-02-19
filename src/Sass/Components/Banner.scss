@@ -12,6 +12,11 @@
   align-items: center;
   position: relative;
 
+  @media screen and (max-width: 375px) {
+    height: 112px;
+    margin-bottom: 30px;
+  }
+
   &::after {
     content: '';
     width: 100%;
@@ -28,6 +33,10 @@
     height: 223px;
     border-radius: 25px;
     object-fit: cover;
+
+    @media screen and (max-width: 375px) {
+      height: 112px;
+    }
   }
 
   h1 {
@@ -42,5 +51,16 @@
     border-radius: 25px;
     margin-top: -220px;
     z-index: 2;
+
+    @media screen and (max-width: 375px) {
+      font-size: 1.6em;
+      line-height: 100%;
+      margin-top: -112px;
+      margin-left: -20px;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      width: 244px;
+    }
   }
 }

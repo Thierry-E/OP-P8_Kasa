@@ -5,4 +5,9 @@
   background-color: $third-color;
   border-radius: 25px;
   margin: 0 auto 50px auto;
+
+  @media screen and (max-width: 375px) {
+    width: 100%;
+    background-color: $secondary-color;
+  }
 }
