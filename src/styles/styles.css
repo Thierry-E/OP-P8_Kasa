@@ -23,9 +23,25 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 375px) {
+  header {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+}
 header img {
   width: auto;
   height: 68px;
+}
+@media screen and (max-width: 375px) {
+  header img {
+    height: 47px;
+    margin-left: 20px;
+  }
+}
+header nav {
+  margin-right: 20px;
 }
 header nav a {
   width: 7.5em;
@@ -34,6 +50,12 @@ header nav a {
   font-size: 1.125em;
   font-weight: 500;
   margin-left: 57px;
+}
+@media screen and (max-width: 375px) {
+  header nav a {
+    font-size: 1em;
+    margin-left: 20px;
+  }
 }
 
 .nav-Active {
@@ -56,10 +78,25 @@ header nav a {
   height: 39px;
   margin-bottom: 32px;
 }
+@media screen and (max-width: 375px) {
+  .footer img {
+    margin-bottom: 20px;
+  }
+}
 .footer span {
   color: #fff;
   font-size: 1.5em;
   font-weight: 500;
+}
+@media screen and (max-width: 375px) {
+  .footer span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    width: 129px;
+    font-size: 1em;
+  }
 }
 
 /***Couleurs***/
@@ -74,6 +111,12 @@ header nav a {
   justify-content: center;
   align-items: center;
   position: relative;
+}
+@media screen and (max-width: 375px) {
+  .banner {
+    height: 112px;
+    margin-bottom: 30px;
+  }
 }
 .banner::after {
   content: "";
@@ -91,6 +134,11 @@ header nav a {
   border-radius: 25px;
   object-fit: cover;
 }
+@media screen and (max-width: 375px) {
+  .banner img {
+    height: 112px;
+  }
+}
 .banner h1 {
   width: 100%;
   height: 223px;
@@ -104,6 +152,18 @@ header nav a {
   margin-top: -220px;
   z-index: 2;
 }
+@media screen and (max-width: 375px) {
+  .banner h1 {
+    font-size: 1.6em;
+    line-height: 100%;
+    margin-top: -112px;
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    width: 244px;
+  }
+}
 
 /***Couleurs***/
 .gallery {
@@ -112,22 +172,43 @@ header nav a {
   border-radius: 25px;
   margin: 0 auto 50px auto;
 }
+@media screen and (max-width: 375px) {
+  .gallery {
+    width: 100%;
+    background-color: #fff;
+  }
+}
 
 /***Couleurs***/
 .cart {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 55px;
   padding: 65px 0 65px 0;
-  margin-left: 100px;
+}
+@media screen and (max-width: 375px) {
+  .cart {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 0 30px 0;
+    gap: 20px;
+  }
 }
 .cart .cart-Item {
   width: 27.42%;
   height: 340px;
   border-radius: 10px;
   position: relative;
+}
+@media screen and (max-width: 375px) {
+  .cart .cart-Item {
+    width: 85%;
+    height: 255px;
+  }
 }
 .cart .cart-Item h3 {
   width: 100%;
@@ -144,11 +225,26 @@ header nav a {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 375px) {
+  .cart .cart-Item h3 {
+    font-size: 1em;
+  }
+}
 .cart img {
   width: 100%;
   height: 340px;
   border-radius: 10px;
   object-fit: cover;
+}
+@media screen and (max-width: 900px) {
+  .cart img {
+    height: 255px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .cart img {
+    height: 225px;
+  }
 }
 
 /***Couleurs***/
@@ -254,7 +350,8 @@ header nav a {
 }
 @media screen and (max-width: 375px) {
   .error h1 {
-    color: blue;
+    font-size: 6em;
+    margin-bottom: 113px;
   }
 }
 .error p {
@@ -264,6 +361,12 @@ header nav a {
   text-align: center;
   margin-bottom: 139px;
 }
+@media screen and (max-width: 375px) {
+  .error p {
+    font-size: 1.6em;
+    margin-bottom: 113px;
+  }
+}
 .error a {
   color: #000;
   font-size: 1.125em;
@@ -271,6 +374,12 @@ header nav a {
   text-align: center;
   text-decoration-line: underline;
   margin-bottom: 139px;
+}
+@media screen and (max-width: 375px) {
+  .error a {
+    font-size: 1em;
+    margin-bottom: 113px;
+  }
 }
 
 /***Couleurs***/
