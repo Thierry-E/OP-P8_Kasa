@@ -18,9 +18,14 @@ header {
     width: auto;
     height: 68px;
 
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 590px) {
       height: 47px;
       margin-left: 20px;
+    }
+
+    @media screen and (max-width: 440px) {
+      height: 30px;
+      margin: 15px;
     }
   }
 
@@ -35,6 +40,16 @@ header {
     font-size: 1.125em;
     font-weight: 500;
     margin-left: 57px;
+
+    @media screen and (max-width: 590px) {
+      font-size: 1em;
+      margin-left: 15px;
+    }
+
+    @media screen and (max-width: 440px) {
+      margin-left: 5px;
+      font-size: 0.875em;
+    }
 
     @media screen and (max-width: 375px) {
       font-size: 1em;
