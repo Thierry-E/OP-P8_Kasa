@@ -3,8 +3,8 @@
 @use './Utils/Variables';
 @use './Utils/Mixins';
 @use './Bases/Base';
-@use './Components/Header';
-@use './Components/Footer';
+@use './Layouts/Header.scss';
+@use './Layouts/Footer.scss';
 @use './Components/Banner';
 @use './Components/Gallery';
 @use './Components/Cart';

@@ -34,10 +34,16 @@ header img {
   width: auto;
   height: 68px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 590px) {
   header img {
     height: 47px;
     margin-left: 20px;
+  }
+}
+@media screen and (max-width: 440px) {
+  header img {
+    height: 30px;
+    margin: 15px;
   }
 }
 header nav {
@@ -50,6 +56,18 @@ header nav a {
   font-size: 1.125em;
   font-weight: 500;
   margin-left: 57px;
+}
+@media screen and (max-width: 590px) {
+  header nav a {
+    font-size: 1em;
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 440px) {
+  header nav a {
+    margin-left: 5px;
+    font-size: 0.875em;
+  }
 }
 @media screen and (max-width: 375px) {
   header nav a {
@@ -152,6 +170,16 @@ header nav a {
   margin-top: -220px;
   z-index: 2;
 }
+@media screen and (max-width: 1024px) {
+  .banner h1 {
+    font-size: 2.4em;
+  }
+}
+@media screen and (max-width: 696px) {
+  .banner h1 {
+    font-size: 2em;
+  }
+}
 @media screen and (max-width: 375px) {
   .banner h1 {
     font-size: 1.6em;
@@ -181,32 +209,30 @@ header nav a {
 
 /***Couleurs***/
 .cart {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  max-width: 86%;
+  display: grid;
+  grid-template-columns: repeat(3, 29%);
   align-items: center;
   gap: 55px;
+  margin: 0 auto;
   padding: 65px 0 65px 0;
 }
 @media screen and (max-width: 375px) {
   .cart {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 1fr 100%;
     padding: 0;
     margin: 0 0 30px 0;
-    gap: 20px;
+    gap: 20px 55px;
   }
 }
 .cart .cart-Item {
-  width: 27.42%;
+  width: 100%;
   height: 340px;
   border-radius: 10px;
   position: relative;
 }
 @media screen and (max-width: 375px) {
   .cart .cart-Item {
-    width: 85%;
     height: 255px;
   }
 }
@@ -214,7 +240,7 @@ header nav a {
   width: 100%;
   height: 65px;
   color: #fff;
-  font-size: 1.125em;
+  font-size: 1em;
   font-weight: 700;
   line-height: 1.5em;
   position: absolute;
@@ -224,6 +250,11 @@ header nav a {
   padding-left: 15px;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 696px) {
+  .cart .cart-Item h3 {
+    font-size: 0.875em;
+  }
 }
 @media screen and (max-width: 375px) {
   .cart .cart-Item h3 {
@@ -238,7 +269,7 @@ header nav a {
 }
 @media screen and (max-width: 900px) {
   .cart img {
-    height: 255px;
+    height: 340px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -348,7 +379,7 @@ header nav a {
   text-align: center;
   margin-bottom: 139px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 590px) {
   .error h1 {
     font-size: 6em;
     margin-bottom: 113px;
@@ -360,6 +391,11 @@ header nav a {
   font-weight: 500;
   text-align: center;
   margin-bottom: 139px;
+}
+@media screen and (max-width: 440px) {
+  .error p {
+    font-size: 1.8em;
+  }
 }
 @media screen and (max-width: 375px) {
   .error p {
@@ -453,6 +489,12 @@ header nav a {
 }
 .stars i {
   font-size: 1.3em;
+}
+.stars .redStars {
+  color: #ff6060;
+}
+.stars .greyStars {
+  color: #e3e3e3;
 }
 
 .features {

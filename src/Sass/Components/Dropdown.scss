@@ -5,13 +5,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 25px;
 
   .list {
     width: 988px;
     height: 34px;
     background-color: $fourth-color;
-    padding: 10px 20px;
-    margin-bottom: 25px;
+    border-radius: 5px;
+    padding: 25px;
+    margin-bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,12 +44,16 @@
     font-size: 1em;
     font-weight: 500;
     color: $primary-color;
-    margin-bottom: 60px;
+    margin-bottom: 0;
     line-height: 1.8em;
     opacity: 0;
   }
 
   .listActive {
     opacity: 1;
+    background-color: $third-color;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 25px;
+    padding: 25px;
   }
 }

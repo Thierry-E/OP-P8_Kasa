@@ -14,10 +14,7 @@ const Locations = () => {
   const renderStars = (rating) => {
     return [0, 1, 2, 3, 4].map((i) => (
       <i
-        className='fas fa-star'
-        style={{
-          color: i < rating ? '#ff6060' : '#e3e3e3',
-        }}
+        className={`fas fa-star ${i < rating ? 'redStars' : 'greyStars'}`}
         key={i}
       ></i>
     ))
