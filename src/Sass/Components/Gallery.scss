@@ -2,7 +2,12 @@
 
 .gallery {
   width: 86%;
-  background-color: $third-color;
+  background-color: #f6f6f6;
   border-radius: 25px;
   margin: 0 auto 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px;
+  gap: 50px;
 }
