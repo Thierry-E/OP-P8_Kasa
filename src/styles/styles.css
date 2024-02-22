@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@
 /***Ombres sur les textes***/
 body {
   margin: 0 auto;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /***Couleurs***/
@@ -92,7 +92,7 @@ header nav a {
   position: relative;
 }
 .banner::after {
-  content: "";
+  content: '';
   width: 100%;
   position: absolute;
   top: 0;
@@ -150,13 +150,26 @@ header nav a {
   line-height: 1.5em;
   position: absolute;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(10, 10, 10, 0.5) 42%, rgba(4, 4, 4, 0.5) 99.99%, rgba(0, 0, 0, 0.4) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(10, 10, 10, 0.5) 42%,
+    rgba(4, 4, 4, 0.5) 99.99%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
   border-radius: 0 0 10px 10px;
   padding-left: 15px;
   display: flex;
   align-items: center;
 }
 .cart-Item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
