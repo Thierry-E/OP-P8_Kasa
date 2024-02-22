@@ -12,6 +12,11 @@
   align-items: center;
   position: relative;
 
+  @media screen and (max-width: 767px) {
+    height: 111px;
+    margin: -93px auto 20px auto;
+  }
+
   &::after {
     content: '';
     width: 100%;
@@ -28,6 +33,10 @@
     height: 223px;
     border-radius: 25px;
     object-fit: cover;
+
+    @media screen and (max-width: 767px) {
+      height: 111px;
+    }
   }
 
   h1 {

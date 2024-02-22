@@ -36,7 +36,7 @@ header {
     font-weight: 500;
 
     @media screen and (max-width: 1024px) {
-      font-size: 0.875em;
+      font-size: 0.9em;
     }
 
     @media screen and (max-width: 767px) {
@@ -49,4 +49,8 @@ header {
 .nav-Active {
   border-bottom: 3px solid $primary-color;
   padding-bottom: 2px;
+
+  @media screen and (max-width: 767px) {
+    border-bottom: 2px solid $primary-color;
+  }
 }

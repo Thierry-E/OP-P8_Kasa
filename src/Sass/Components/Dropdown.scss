@@ -5,10 +5,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px;
+  padding: 10px 20px 10px 15px;
+  margin-bottom: 22px;
 
   .list {
-    width: 988px;
+    width: 1023px;
     height: 34px;
     background-color: $fourth-color;
     border-radius: 5px;
@@ -17,6 +18,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media screen and (max-width: 1024px) {
+      width: 700px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 335px;
+    }
   }
 
   h3 {
@@ -55,5 +64,13 @@
     border-radius: 0 0 5px 5px;
     margin-bottom: 25px;
     padding: 25px;
+
+    @media screen and (max-width: 1024px) {
+      width: 700px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 335px;
+    }
   }
 }
