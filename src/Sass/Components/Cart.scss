@@ -35,4 +35,9 @@
     border-radius: 10px;
     object-fit: cover;
   }
+
+  @media screen and (max-width: 767px) {
+    width: 335px;
+    height: 255px;
+  }
 }
