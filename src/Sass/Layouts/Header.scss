@@ -24,6 +24,10 @@ header {
     display: flex;
     align-items: center;
     gap: 20px;
+
+    @media screen and (max-width: 767px) {
+      gap: 10px;
+    }
   }
 
   nav a {
@@ -33,6 +37,10 @@ header {
 
     @media screen and (max-width: 1024px) {
       font-size: 0.875em;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 0.75em;
     }
   }
 }

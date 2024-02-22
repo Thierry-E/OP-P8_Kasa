@@ -19,5 +19,11 @@
     color: $secondary-color;
     font-size: 1.5em;
     font-weight: 500;
+
+    @media screen and (max-width: 767px) {
+      font-size: 0.75em;
+      width: 134px;
+      text-align: center;
+    }
   }
 }
