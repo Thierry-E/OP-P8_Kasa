@@ -605,7 +605,7 @@ header nav a {
   padding: 10px 20px 10px 10px;
 }
 .features .listContent .listActive {
-  max-width: 100%;
+  width: 100%;
 }
 .features .listContent p {
   padding: 20px;
