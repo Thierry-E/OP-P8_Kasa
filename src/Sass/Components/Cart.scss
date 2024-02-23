@@ -1,7 +1,7 @@
 @import '../Utils/Variables.scss';
 
 .cart-Item {
-  width: 340px;
+  width: 28%;
   height: 340px;
   border-radius: 10px;
   position: relative;
@@ -34,6 +34,11 @@
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 28%;
+    height: 220px;
   }
 
   @media screen and (max-width: 767px) {

@@ -32,6 +32,7 @@
     @media screen and (max-width: 767px) {
       font-size: 1.125em;
       width: 335px;
+      line-height: 25px;
     }
   }
 
@@ -71,6 +72,7 @@
       height: 18px;
       font-size: 0.625em;
       border-radius: 10px;
+      padding: 10px;
     }
   }
 }
@@ -92,10 +94,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 70px;
+    gap: 20px;
 
     @media screen and (max-width: 767px) {
-      gap: 40px;
       margin-right: -20px;
     }
 
@@ -114,11 +115,14 @@
     h3 {
       color: $fourth-color;
       font-size: 1.125em;
+      text-align: right;
       font-weight: 500;
-      width: 20px;
+      width: 48%;
 
       @media screen and (max-width: 767px) {
         font-size: 0.75em;
+        margin-bottom: 20px;
+        width: 100%;
       }
     }
   }
@@ -131,6 +135,8 @@
   gap: 10px;
 
   @media screen and (max-width: 767px) {
+    justify-content: flex-start;
+    margin-left: 25px;
     gap: 5px;
   }
 

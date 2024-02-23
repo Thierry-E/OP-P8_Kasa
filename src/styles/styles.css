@@ -172,14 +172,9 @@ header nav a {
   margin: 0 auto 50px auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 50px;
   gap: 50px;
-}
-@media screen and (max-width: 767px) {
-  .gallery {
-    padding: 50px;
-  }
 }
 @media screen and (max-width: 767px) {
   .gallery {
@@ -193,7 +188,7 @@ header nav a {
 
 /***Couleurs***/
 .cart-Item {
-  width: 340px;
+  width: 28%;
   height: 340px;
   border-radius: 10px;
   position: relative;
@@ -218,6 +213,12 @@ header nav a {
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
+}
+@media screen and (max-width: 1024px) {
+  .cart-Item {
+    width: 28%;
+    height: 220px;
+  }
 }
 @media screen and (max-width: 767px) {
   .cart-Item {
@@ -323,8 +324,8 @@ header nav a {
 @media screen and (max-width: 767px) {
   .slideContainer {
     margin: -93px auto 5px auto;
-    width: 335px;
     height: 255px;
+    margin-bottom: 15px;
   }
 }
 .slideContainer img {
@@ -453,6 +454,7 @@ header nav a {
   .infosLeft h2 {
     font-size: 1.125em;
     width: 335px;
+    line-height: 25px;
   }
 }
 .infosLeft p {
@@ -492,6 +494,7 @@ header nav a {
     height: 18px;
     font-size: 0.625em;
     border-radius: 10px;
+    padding: 10px;
   }
 }
 
@@ -513,11 +516,10 @@ header nav a {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 70px;
+  gap: 20px;
 }
 @media screen and (max-width: 767px) {
   .infosRight .personna {
-    gap: 40px;
     margin-right: -20px;
   }
 }
@@ -536,12 +538,15 @@ header nav a {
 .infosRight .personna h3 {
   color: #ff6060;
   font-size: 1.125em;
+  text-align: right;
   font-weight: 500;
-  width: 20px;
+  width: 48%;
 }
 @media screen and (max-width: 767px) {
   .infosRight .personna h3 {
     font-size: 0.75em;
+    margin-bottom: 20px;
+    width: 100%;
   }
 }
 
@@ -553,6 +558,8 @@ header nav a {
 }
 @media screen and (max-width: 767px) {
   .stars {
+    justify-content: flex-start;
+    margin-left: 25px;
     gap: 5px;
   }
 }
