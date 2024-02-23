@@ -32,6 +32,10 @@
     font-size: 1.2em;
     font-weight: 700;
     color: $secondary-color;
+
+    @media screen and (max-width: 767px) {
+      font-size: 0.813em;
+    }
   }
 
   .rafter {
@@ -42,6 +46,10 @@
     cursor: pointer;
     transform: rotate(90deg);
     transition: transform 0.5s ease;
+
+    @media screen and (max-width: 767px) {
+    }
+    font-size: 32px;
   }
 
   .rafterActive {

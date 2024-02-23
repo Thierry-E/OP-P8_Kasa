@@ -261,6 +261,11 @@ header nav a {
   font-weight: 700;
   color: #fff;
 }
+@media screen and (max-width: 767px) {
+  .listContent h3 {
+    font-size: 0.813em;
+  }
+}
 .listContent .rafter {
   font-size: 44px;
   font-weight: 550;
@@ -269,6 +274,7 @@ header nav a {
   cursor: pointer;
   transform: rotate(90deg);
   transition: transform 0.5s ease;
+  font-size: 32px;
 }
 .listContent .rafterActive {
   transform: rotate(-92deg);
@@ -309,6 +315,18 @@ header nav a {
   margin: 0 auto 30px auto;
   position: relative;
 }
+@media screen and (max-width: 1024px) {
+  .slideContainer {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .slideContainer {
+    margin: -93px auto 5px auto;
+    width: 335px;
+    height: 255px;
+  }
+}
 .slideContainer img {
   width: 100%;
   height: 100%;
@@ -322,6 +340,11 @@ header nav a {
   top: 50%;
   transform: translateY(-45%);
   cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .slideContainer .rafter {
+    font-size: 1em;
+  }
 }
 .slideContainer .rafterLeft {
   left: 20px;
@@ -338,6 +361,11 @@ header nav a {
   left: 50%;
   transform: translateX(-45%);
   text-shadow: 0px 0px 3px rgb(0, 0, 0);
+}
+@media screen and (max-width: 767px) {
+  .slideContainer .counter {
+    display: none;
+  }
 }
 
 /***Couleurs***/
@@ -397,9 +425,23 @@ header nav a {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 767px) {
+  .logementContent {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+  }
+}
 
 .infosLeft {
   width: 80%;
+}
+@media screen and (max-width: 767px) {
+  .infosLeft {
+    width: 100%;
+    margin-left: 50px;
+  }
 }
 .infosLeft h2 {
   color: #ff6060;
@@ -407,14 +449,31 @@ header nav a {
   font-weight: 500;
   line-height: 51px;
 }
+@media screen and (max-width: 767px) {
+  .infosLeft h2 {
+    font-size: 1.125em;
+    width: 335px;
+  }
+}
 .infosLeft p {
   color: #000;
   font-size: 1.125em;
   font-weight: 500;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 767px) {
+  .infosLeft p {
+    font-size: 0.875em;
+    margin-bottom: 15px;
+  }
+}
 .infosLeft .tags {
   margin-bottom: 25px;
+}
+@media screen and (max-width: 767px) {
+  .infosLeft .tags {
+    margin-bottom: 15px;
+  }
 }
 .infosLeft span {
   width: 115px;
@@ -427,6 +486,14 @@ header nav a {
   font-weight: 700;
   border-radius: 15px;
 }
+@media screen and (max-width: 767px) {
+  .infosLeft span {
+    width: 84px;
+    height: 18px;
+    font-size: 0.625em;
+    border-radius: 10px;
+  }
+}
 
 .infosRight {
   width: 20%;
@@ -434,11 +501,25 @@ header nav a {
   flex-direction: column;
   justify-content: flex-end;
 }
+@media screen and (max-width: 767px) {
+  .infosRight {
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 105px;
+  }
+}
 .infosRight .personna {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 70px;
+}
+@media screen and (max-width: 767px) {
+  .infosRight .personna {
+    gap: 40px;
+    margin-right: -20px;
+  }
 }
 .infosRight .personna img {
   width: 64px;
@@ -446,11 +527,22 @@ header nav a {
   border-radius: 100%;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 767px) {
+  .infosRight .personna img {
+    width: 32px;
+    height: 32px;
+  }
+}
 .infosRight .personna h3 {
   color: #ff6060;
   font-size: 1.125em;
   font-weight: 500;
   width: 20px;
+}
+@media screen and (max-width: 767px) {
+  .infosRight .personna h3 {
+    font-size: 0.75em;
+  }
 }
 
 .stars {
@@ -459,8 +551,18 @@ header nav a {
   justify-content: flex-end;
   gap: 10px;
 }
+@media screen and (max-width: 767px) {
+  .stars {
+    gap: 5px;
+  }
+}
 .stars i {
   font-size: 1.3em;
+}
+@media screen and (max-width: 767px) {
+  .stars i {
+    font-size: 1.125em;
+  }
 }
 .stars .redStars {
   color: #ff6060;
@@ -476,6 +578,14 @@ header nav a {
   align-items: flex-start;
   gap: 20px;
 }
+@media screen and (max-width: 767px) {
+  .features {
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 0;
+  }
+}
 .features .listContent {
   display: flex;
   flex-direction: column;
@@ -483,9 +593,16 @@ header nav a {
   align-items: flex-start;
   width: 50%;
 }
+@media screen and (max-width: 767px) {
+  .features .listContent {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
 .features .listContent .list {
   width: 100%;
   margin: 0;
+  padding: 10px 20px 10px 10px;
 }
 .features .listContent .listActive {
   max-width: 100%;

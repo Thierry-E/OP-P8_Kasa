@@ -8,6 +8,16 @@
   margin: 0 auto 30px auto;
   position: relative;
 
+  @media screen and (max-width: 1024px) {
+    height: 300px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: -93px auto 5px auto;
+    width: 335px;
+    height: 255px;
+  }
+
   img {
     width: 100%;
     height: 100%;
@@ -22,6 +32,10 @@
     top: 50%;
     transform: translateY(-45%);
     cursor: pointer;
+
+    @media screen and (max-width: 767px) {
+      font-size: 1em;
+    }
   }
 
   .rafterLeft {
@@ -41,5 +55,9 @@
     left: 50%;
     transform: translateX(-45%);
     @include counterShadow;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 }
