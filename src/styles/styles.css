@@ -115,6 +115,12 @@ header nav a {
 }
 @media screen and (max-width: 767px) {
   .banner {
+    height: 160px;
+    margin: -93px auto 20px auto;
+  }
+}
+@media screen and (max-width: 460px) {
+  .banner {
     height: 111px;
     margin: -93px auto 20px auto;
   }
@@ -136,6 +142,11 @@ header nav a {
   object-fit: cover;
 }
 @media screen and (max-width: 767px) {
+  .banner img {
+    height: 160px;
+  }
+}
+@media screen and (max-width: 460px) {
   .banner img {
     height: 111px;
   }
@@ -159,6 +170,19 @@ header nav a {
   }
 }
 @media screen and (max-width: 767px) {
+  .banner h1 {
+    font-size: 2em;
+    padding-top: 120px;
+    line-height: 1.4em;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 584px) {
+  .banner h1 {
+    padding-top: 100px;
+  }
+}
+@media screen and (max-width: 460px) {
   .banner h1 {
     font-size: 1.5em;
     padding-top: 130px;
