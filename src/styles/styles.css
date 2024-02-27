@@ -153,6 +153,11 @@ header nav a {
   margin-top: -220px;
   z-index: 2;
 }
+@media screen and (max-width: 1024px) {
+  .banner h1 {
+    font-size: 2.5em;
+  }
+}
 @media screen and (max-width: 767px) {
   .banner h1 {
     font-size: 1.5em;
@@ -207,6 +212,11 @@ header nav a {
   padding-left: 15px;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .cart-Item h3 {
+    font-size: 0.875em;
+  }
 }
 .cart-Item img {
   width: 100%;
