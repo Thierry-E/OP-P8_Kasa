@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 const Cart = ({ location }) => {
   return (
     <div key={location.id} className='cart-Item'>
-      <NavLink to={`/locations/${location.id}`}>
+      <NavLink to={`/Locations/${location.id}`}>
         <img src={location.cover} alt={location.title} />
         <h3>{location.title}</h3>
       </NavLink>

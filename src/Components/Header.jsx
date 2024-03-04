@@ -13,7 +13,7 @@ const Header = () => {
           Accueil
         </NavLink>
         <NavLink
-          to='/about'
+          to='/About'
           className={(nav) => (nav.isActive ? 'nav-Active' : null)}
         >
           A propos

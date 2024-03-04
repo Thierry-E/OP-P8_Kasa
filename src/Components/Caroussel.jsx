@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types'
 
-const Carousel = ({ slides }) => {
+const Caroussel = ({ slides }) => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0)
   const totalSlides = slides.length
 
@@ -42,8 +42,8 @@ const Carousel = ({ slides }) => {
   )
 }
 
-Carousel.propTypes = {
+Caroussel.propTypes = {
   slides: PropTypes.array.isRequired,
 }
 
-export default Carousel
+export default Caroussel
