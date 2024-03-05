@@ -16,7 +16,6 @@ DropdownList.propTypes = {
   services: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
-      // Permet à l'id d'être soit un nombre soit une chaîne de caractères.
       title: PropTypes.string.isRequired,
       text: PropTypes.string.isRequired,
     })
