@@ -1,9 +1,9 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Header from './Header'
-import Home from '../Pages/Home'
-import Footer from './Footer'
-import Error from '../pages/Error'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 import About from '../pages/About'
+import Error from '../pages/Error'
+import Home from '../pages/Home'
 import Locations from '../pages/Locations'
 
 const App = () => {
@@ -15,9 +15,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/About' element={<About />} />
           <Route path='/Locations/:id' element={<Locations />} />
-          {/* Route pour afficher les détails d'un appartement en fonction de son identifiant */}
           <Route path='*' element={<Error />} />
-          {/*Route générique pour les URL non valides*/}
         </Routes>
         <Footer />
       </BrowserRouter>
